@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       ANDROID_OR_RECOVERY:
-        description: 'ANDROID_OR_RECOVERY'
+        description: 'recovery'
         required: true
       NAME_VERSION:
-        description: 'NAME_VERSION'
+        description: 'twrp-12.1'
         required: true
 
 jobs:

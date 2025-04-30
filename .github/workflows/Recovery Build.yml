@@ -4,25 +4,25 @@ on:
   workflow_dispatch:
     inputs:
       RECOVERY_NAME:
-        description: 'RECOVERY_NAME (Only support TWRP_12,OrangeFox_12.)'
+        description: "twrp-12.1"
         required: true
       DEVICE_PATH:
-        description: 'DEVICE_PATH'
+        description: "xiaomi/nabu"
         required: true
       DEVICE_TREE_URL_BRANCH:
-        description: 'DEVICE_TREE_URL&BRANCH'
+        description: "https://github.com/TeamWin/android_device_xiaomi_nabu twrp-12.1"
         required: true
       COMMON_TREE_URL_BRANCH:
-        description: 'COMMON_TREE_URL&BRANCH (if no common tree, leave blank)'
-        required: false
+        description: "https://github.com/TeamWin/android_device_xiaomi_sm8150-common twrp-12.1"
+        required: true
       COMMON_PATH:
-        description: 'COMMON_PATH (if no common tree, leave blank)'
-        required: false
+        description: "xiaomi/sm8150-common"
+        required: true
       MAKEFILE_NAME_BUILD_TYPE:
-        description: 'MAKEFILE_NAME&BUILD_TYPE'
+        description: "twrp_nabu-eng"
         required: true
       BUILD_TARGET:
-        description: 'BUILD_TARGET'
+        description: 'boot'
         required: true
 
 jobs:
